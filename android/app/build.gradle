@@ -22,11 +22,6 @@ if (flutterVersionName == null) {
     flutterVersionName = '1.0'
 }
 
-<<<<<<< HEAD
-android {
-    namespace "com.example.clean_architecture"
-    compileSdk flutter.compileSdkVersion
-=======
 def keystoreProperties = new Properties()
 def keystorePropertiesFile = rootProject.file('key.properties')
 if (keystorePropertiesFile.exists()) {
@@ -36,7 +31,6 @@ if (keystorePropertiesFile.exists()) {
 android {
     namespace "com.juanpa.flutter_clean_architecture"
     compileSdkVersion flutter.compileSdkVersion
->>>>>>> 5d47357 (📦 NEW: Add new scaffolding with environments)
     ndkVersion flutter.ndkVersion
 
     compileOptions {
@@ -54,11 +48,7 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-<<<<<<< HEAD
-        applicationId "com.example.clean_architecture"
-=======
         applicationId "com.juanpa.flutter_clean_architecture"
->>>>>>> 5d47357 (📦 NEW: Add new scaffolding with environments)
         // You can update the following values to match your application needs.
         // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-gradle-build-configuration.
         minSdkVersion flutter.minSdkVersion
@@ -67,12 +57,6 @@ android {
         versionName flutterVersionName
     }
 
-<<<<<<< HEAD
-    buildTypes {
-        release {
-            // TODO: Add your own signing config for the release build.
-            // Signing with the debug keys for now, so `flutter run --release` works.
-=======
     signingConfigs {
         if (System.getenv("ANDROID_KEYSTORE_PATH")) {
             release {
@@ -117,7 +101,6 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt')
         }
         debug {
->>>>>>> 5d47357 (📦 NEW: Add new scaffolding with environments)
             signingConfig signingConfigs.debug
         }
     }
@@ -127,10 +110,6 @@ flutter {
     source '../..'
 }
 
-<<<<<<< HEAD
-dependencies {}
-=======
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.10"
 }
->>>>>>> 5d47357 (📦 NEW: Add new scaffolding with environments)

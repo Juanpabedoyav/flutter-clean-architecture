@@ -14,14 +14,6 @@ migrate_working_dir/
 *.iml
 *.ipr
 *.iws
-<<<<<<< HEAD
-.idea/
-
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
-=======
 .idea/*
 
 # Visual Studio Code related
@@ -32,7 +24,6 @@ migrate_working_dir/
 
 # packages file containing multi-root paths
 .packages.generated
->>>>>>> 5d47357 (📦 NEW: Add new scaffolding with environments)
 
 # Flutter/Dart/Pub related
 **/doc/api/
@@ -40,11 +31,6 @@ migrate_working_dir/
 .dart_tool/
 .flutter-plugins
 .flutter-plugins-dependencies
-<<<<<<< HEAD
-.pub-cache/
-.pub/
-/build/
-=======
 .packages
 .pub-cache/
 .pub/
@@ -105,7 +91,6 @@ packages/**/pubspec.lock
 
 # Web related
 lib/generated_plugin_registrant.dart
->>>>>>> 5d47357 (📦 NEW: Add new scaffolding with environments)
 
 # Symbolication related
 app.*.symbols
@@ -113,12 +98,6 @@ app.*.symbols
 # Obfuscation related
 app.*.map.json
 
-<<<<<<< HEAD
-# Android Studio will place build artifacts here
-/android/app/debug
-/android/app/profile
-/android/app/release
-=======
 # Exceptions to the above rules.
 !**/ios/**/default.mode1v3
 !**/ios/**/default.mode2v3
@@ -131,4 +110,3 @@ app.*.map.json
 !.idea/codeStyles/
 !.idea/dictionaries/
 !.idea/runConfigurations/
->>>>>>> 5d47357 (📦 NEW: Add new scaffolding with environments)
