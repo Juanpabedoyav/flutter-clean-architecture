@@ -8,7 +8,7 @@ import 'package:flutter/foundation.dart'
 ///
 /// Example:
 /// ```dart
-/// import 'firebase_options.dart';
+/// import 'firebase_options_dev.dart';
 /// // ...
 /// await Firebase.initializeApp(
 ///   options: DefaultFirebaseOptions.currentPlatform,
@@ -50,19 +50,19 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyA4MlyhajQyy0offefWgqCxoY9vrIKuTLA',
-    appId: '1:1048313347791:android:cca7873a669b23964f01ba',
-    messagingSenderId: '1048313347791',
-    projectId: 'flutter-dev-5ed2d',
-    storageBucket: 'flutter-dev-5ed2d.appspot.com',
+    apiKey: 'AIzaSyBSNXoMV4XmD0q2qINMA6OyUQhEflwtGA0',
+    appId: '1:164193138914:android:4ec7c056e668cc1d6786bb',
+    messagingSenderId: '164193138914',
+    projectId: 'flutter-dev-ec416',
+    storageBucket: 'flutter-dev-ec416.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyBrxuJuvtKAb1pjzgMye30BqciNEFTcCk8',
-    appId: '1:1048313347791:ios:ac0cfc2f93d9f2c84f01ba',
-    messagingSenderId: '1048313347791',
-    projectId: 'flutter-dev-5ed2d',
-    storageBucket: 'flutter-dev-5ed2d.appspot.com',
-    iosBundleId: 'com.juanpa.flutter-clean-architecture',
+    apiKey: 'AIzaSyDPSuMnuhPhepbg4QRz0oyHhYEBk2hODxU',
+    appId: '1:164193138914:ios:6d0686eaf36bc7e86786bb',
+    messagingSenderId: '164193138914',
+    projectId: 'flutter-dev-ec416',
+    storageBucket: 'flutter-dev-ec416.appspot.com',
+    iosBundleId: 'com.juanpa.flutter-clean-architecture.dev',
   );
 }

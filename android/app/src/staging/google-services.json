@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "260965172583",
-    "project_id": "flutter-prod-53299",
-    "storage_bucket": "flutter-prod-53299.appspot.com"
+    "project_number": "164193138914",
+    "project_id": "flutter-dev-ec416",
+    "storage_bucket": "flutter-dev-ec416.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:260965172583:android:ed3bdd56799e2e800f9bc2",
+        "mobilesdk_app_id": "1:164193138914:android:4ec7c056e668cc1d6786bb",
         "android_client_info": {
-          "package_name": "com.juanpa.flutter_clean_architecture"
+          "package_name": "com.juanpa.flutter_clean_architecture.dev"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBJ92MevZJrNhPILkrzfQgFvIUJfQgh14w"
+          "current_key": "AIzaSyBSNXoMV4XmD0q2qINMA6OyUQhEflwtGA0"
         }
       ],
       "services": {
