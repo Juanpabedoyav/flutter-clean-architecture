@@ -49,9 +49,9 @@
 		3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AppFrameworkInfo.plist; path = Flutter/AppFrameworkInfo.plist; sourceTree = "<group>"; };
 		4035E4E56A3748B865FD81B7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Runner/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6EA6D5AB2BB6317B0065CF5F /* config */ = {isa = PBXFileReference; lastKnownFileType = folder; name = config; path = ../../../config; sourceTree = "<group>"; };
-		6EA6D5AD2BB6326D0065CF5F /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
-		6EA6D5AE2BB632980065CF5F /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
-		6EA6D5AF2BB632C90065CF5F /* Staging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Staging.xcconfig; sourceTree = "<group>"; };
+		6EA6D5B02BB63A330065CF5F /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Development.xcconfig; path = Flutter/Development.xcconfig; sourceTree = "<group>"; };
+		6EA6D5B12BB63A4D0065CF5F /* Staging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Staging.xcconfig; sourceTree = "<group>"; };
+		6EA6D5B22BB63A620065CF5F /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
 		74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Runner-Bridging-Header.h"; sourceTree = "<group>"; };
 		74858FAE1ED2DC5600515810 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AFA3C8E1D35360C0083082E /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Release.xcconfig; path = Flutter/Release.xcconfig; sourceTree = "<group>"; };
@@ -90,9 +90,9 @@
 				9740EEB21CF90195004384FC /* Debug.xcconfig */,
 				7AFA3C8E1D35360C0083082E /* Release.xcconfig */,
 				9740EEB31CF90195004384FC /* Generated.xcconfig */,
-				6EA6D5AD2BB6326D0065CF5F /* Development.xcconfig */,
-				6EA6D5AE2BB632980065CF5F /* Production.xcconfig */,
-				6EA6D5AF2BB632C90065CF5F /* Staging.xcconfig */,
+				6EA6D5B02BB63A330065CF5F /* Development.xcconfig */,
+				6EA6D5B12BB63A4D0065CF5F /* Staging.xcconfig */,
+				6EA6D5B22BB63A620065CF5F /* Production.xcconfig */,
 			);
 			name = Flutter;
 			sourceTree = "<group>";
@@ -338,7 +338,7 @@
 /* Begin XCBuildConfiguration section */
 		3C9C55192B07AC99000E5FCD /* Debug-production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6EA6D5AE2BB632980065CF5F /* Production.xcconfig */;
+			baseConfigurationReference = 6EA6D5B22BB63A620065CF5F /* Production.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -435,7 +435,7 @@
 		};
 		3C9C551C2B07ACA4000E5FCD /* Release-production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6EA6D5AE2BB632980065CF5F /* Production.xcconfig */;
+			baseConfigurationReference = 6EA6D5B22BB63A620065CF5F /* Production.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -526,7 +526,7 @@
 		};
 		3C9C55222B07ACBD000E5FCD /* Profile-production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6EA6D5AE2BB632980065CF5F /* Production.xcconfig */;
+			baseConfigurationReference = 6EA6D5B22BB63A620065CF5F /* Production.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -615,7 +615,7 @@
 		};
 		3C9C55252B07ACE7000E5FCD /* Debug-development */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6EA6D5AD2BB6326D0065CF5F /* Development.xcconfig */;
+			baseConfigurationReference = 6EA6D5B02BB63A330065CF5F /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -712,7 +712,7 @@
 		};
 		3C9C552B2B07AD09000E5FCD /* Profile-development */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6EA6D5AD2BB6326D0065CF5F /* Development.xcconfig */;
+			baseConfigurationReference = 6EA6D5B02BB63A330065CF5F /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -801,7 +801,7 @@
 		};
 		3C9C552E2B07AD1B000E5FCD /* Release-development */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6EA6D5AD2BB6326D0065CF5F /* Development.xcconfig */;
+			baseConfigurationReference = 6EA6D5B02BB63A330065CF5F /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -892,7 +892,7 @@
 		};
 		3C9C55312B07AD26000E5FCD /* Debug-staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6EA6D5AF2BB632C90065CF5F /* Staging.xcconfig */;
+			baseConfigurationReference = 6EA6D5B12BB63A4D0065CF5F /* Staging.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -989,7 +989,7 @@
 		};
 		3C9C55342B07AD41000E5FCD /* Release-staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6EA6D5AF2BB632C90065CF5F /* Staging.xcconfig */;
+			baseConfigurationReference = 6EA6D5B12BB63A4D0065CF5F /* Staging.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1080,7 +1080,7 @@
 		};
 		3C9C55372B07AD4B000E5FCD /* Profile-staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6EA6D5AF2BB632C90065CF5F /* Staging.xcconfig */;
+			baseConfigurationReference = 6EA6D5B12BB63A4D0065CF5F /* Staging.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
