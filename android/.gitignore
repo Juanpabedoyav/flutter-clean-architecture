@@ -1,8 +1,11 @@
 gradle-wrapper.jar
 /.gradle
 /captures/
+<<<<<<< HEAD
 /gradlew
 /gradlew.bat
+=======
+>>>>>>> 5d47357 (📦 NEW: Add new scaffolding with environments)
 /local.properties
 GeneratedPluginRegistrant.java
 
