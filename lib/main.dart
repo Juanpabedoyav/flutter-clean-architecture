@@ -16,10 +16,12 @@ Future<void> mainCommon(AppEnvironment environment) async {
       statusBarBrightness: Brightness.light,
     ),
   );
-  runApp(ProviderScope(
-    observers: [
-      Observers(),
-    ],
-    child: const MyApp(),
-  ));
+  runApp(
+    ProviderScope(
+      observers: [
+        Observers(),
+      ],
+      child: const MyApp(),
+    ),
+  );
 }
