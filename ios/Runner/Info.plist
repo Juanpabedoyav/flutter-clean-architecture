@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>GOOGLESERVICE_INFO_PLIST</key>
-	<string>$(GOOGLESERVICE_INFO_PLIST)</string>
+	<string>${GOOGLESERVICE_INFO_PLIST}</string>
 	<key>CFBundleLocalizations</key>
 	<array>
 		<string>en</string>

@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>API_KEY</key>
-	<string>AIzaSyBrxuJuvtKAb1pjzgMye30BqciNEFTcCk8</string>
+	<string>AIzaSyDPSuMnuhPhepbg4QRz0oyHhYEBk2hODxU</string>
 	<key>GCM_SENDER_ID</key>
-	<string>1048313347791</string>
+	<string>164193138914</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.example.cleanArchitecture</string>
+	<string>com.juanpa.flutter-clean-architecture.dev</string>
 	<key>PROJECT_ID</key>
-	<string>flutter-dev-5ed2d</string>
+	<string>flutter-dev-ec416</string>
 	<key>STORAGE_BUCKET</key>
-	<string>flutter-dev-5ed2d.appspot.com</string>
+	<string>flutter-dev-ec416.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -25,6 +25,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:1048313347791:ios:4afdd643592bc9c74f01ba</string>
+	<string>1:164193138914:ios:6d0686eaf36bc7e86786bb</string>
 </dict>
 </plist>

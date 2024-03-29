@@ -3,7 +3,7 @@ import 'package:flutter_clean_architecture/main/app_env.dart';
 
 @override
 Widget flavorBanner(Widget child) {
-  if (EnvInfo.environment == AppEnvironment.QA ||
+  if (EnvInfo.environment == AppEnvironment.STAGING ||
       EnvInfo.environment == AppEnvironment.DEV) {
     return Banner(
       location: BannerLocation.bottomEnd,

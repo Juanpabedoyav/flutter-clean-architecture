@@ -1,5 +1,5 @@
 // ignore_for_file: constant_identifier_names, use_setters_to_change_properties, avoid_classes_with_only_static_members
-enum AppEnvironment { DEV, QA, PROD }
+enum AppEnvironment { DEV, STAGING, PROD }
 
 abstract class EnvInfo {
   static AppEnvironment _environment = AppEnvironment.DEV;
@@ -18,19 +18,19 @@ abstract class EnvInfo {
 extension _EnvProperties on AppEnvironment {
   static const _appTitles = {
     AppEnvironment.DEV: 'Dev',
-    AppEnvironment.QA: 'QA',
+    AppEnvironment.STAGING: 'STAGING',
     AppEnvironment.PROD: 'Prod',
   };
 
   static const _connectionStrings = {
     AppEnvironment.DEV: 'https://api.spoonacular.com',
-    AppEnvironment.QA: 'https://api.spoonacular.com',
+    AppEnvironment.STAGING: 'https://api.spoonacular.com',
     AppEnvironment.PROD: 'https://api.spoonacular.com',
   };
 
   static const _envs = {
     AppEnvironment.DEV: 'dev',
-    AppEnvironment.QA: 'qa',
+    AppEnvironment.STAGING: 'STAGING',
     AppEnvironment.PROD: 'prod',
   };
 
