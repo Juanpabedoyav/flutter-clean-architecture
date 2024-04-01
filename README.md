@@ -1,4 +1,7 @@
 # Flutter Clean Architecture
+# Build Models
+
+`flutter pub run build_runner build --delete-conflicting-outputs`
 
 ![coverage][coverage_badge]
 [![style: very good analysis][very_good_analysis_badge]][very_good_analysis_link]
