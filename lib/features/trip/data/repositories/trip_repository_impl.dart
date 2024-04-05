@@ -21,7 +21,8 @@ class TripRepositoryImpl implements TripRepository {
   @override
   Future<List<Trip>> getTrips() async {
     final tripModel = localDataSource.getTrips();
-    final List<Trip> result = tripModel.map((model) => model.toEntity()).toList();
+    final List<Trip> result =
+        tripModel.map((model) => model.toEntity()).toList();
     return result;
   }
 }

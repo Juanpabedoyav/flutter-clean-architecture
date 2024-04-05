@@ -1,5 +1,4 @@
 import 'package:flutter_clean_architecture/features/trip/data/models/trip_model.dart';
-import 'package:flutter_clean_architecture/features/trip/domain/entities/trip.dart';
 import 'package:hive/hive.dart';
 
 class TripLocalDataSource {
