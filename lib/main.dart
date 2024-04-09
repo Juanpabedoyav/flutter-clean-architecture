@@ -21,7 +21,7 @@ Future<void> mainCommon(AppEnvironment environment) async {
   );
   await Hive.initFlutter((await getApplicationDocumentsDirectory()).path);
   Hive.registerAdapter(TripModelAdapter());
-  await Hive.openBox('trips');
+  await Hive.openBox<TripModel>('trips');
 
   runApp(
     ProviderScope(

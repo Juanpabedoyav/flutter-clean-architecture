@@ -1,3 +1,5 @@
+import 'package:dartz/dartz.dart';
+import 'package:flutter_clean_architecture/core/error/failures.dart';
 import 'package:flutter_clean_architecture/features/trip/data/datasources/trip_local_datasource.dart';
 import 'package:flutter_clean_architecture/features/trip/data/models/trip_model.dart';
 import 'package:flutter_clean_architecture/features/trip/domain/entities/trip.dart';
@@ -19,10 +21,14 @@ class TripRepositoryImpl implements TripRepository {
   }
 
   @override
-  Future<List<Trip>> getTrips() async {
-    final tripModel = localDataSource.getTrips();
-    final List<Trip> result =
-        tripModel.map((model) => model.toEntity()).toList();
-    return result;
+  Future<Either<Failure, List<Trip>>> getTrips() async {
+    try {
+      final tripModel = localDataSource.getTrips();
+      final List<Trip> result =
+          tripModel.map((model) => model.toEntity()).toList();
+      return Right(result);
+    } catch (err) {
+      return Left(SomeSpecificError(err.toString()));
+    }
   }
 }

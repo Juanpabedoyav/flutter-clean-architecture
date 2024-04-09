@@ -1,13 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_clean_architecture/features/trip/presentation/pages/add_trip_screen.dart';
 import 'package:flutter_clean_architecture/features/trip/presentation/pages/my_trips_screen.dart';
+import 'package:flutter_clean_architecture/features/trip/presentation/providers/trip_provider.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class MainScreen extends ConsumerWidget {
-  final PageController _pageController = PageController();
   final ValueNotifier<int> _currentPage = ValueNotifier<int>(0);
+  final PageController _pageController = PageController();
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    ref.watch(tripListNotifierProvider.notifier).loadTrip();
+
     _pageController.addListener(() {
       _currentPage.value = _pageController.page!.round();
     });
@@ -42,11 +46,10 @@ class MainScreen extends ConsumerWidget {
       ),
       body: PageView(
         controller: _pageController,
-        children: const [
+        children: [
           MyTripsScreen(),
-          Text('2'),
+          AddTripScreen(),
           Text('3'),
-          Text('4'),
         ],
       ),
       bottomNavigationBar: ValueListenableBuilder(

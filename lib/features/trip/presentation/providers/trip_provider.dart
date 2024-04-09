@@ -7,7 +7,7 @@ import 'package:flutter_clean_architecture/features/trip/domain/usecases/add_tri
 import 'package:flutter_clean_architecture/features/trip/domain/usecases/delete_trip.dart';
 import 'package:flutter_clean_architecture/features/trip/domain/usecases/get_trips.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:hive/hive.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 
 final tripLocalDataSourceProvider = Provider<TripLocalDataSource>((ref) {
   final Box<TripModel> tripBox = Hive.box('trips');
@@ -59,6 +59,7 @@ class TripListNotifier extends StateNotifier<List<Trip>> {
   }
 
   Future<void> loadTrip() async {
-    await _getTrips();
+    final tripsOrFailure = await _getTrips();
+    tripsOrFailure.fold((error) => state = [], (trips) => state = trips);
   }
 }
